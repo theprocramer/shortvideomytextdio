@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dikey Kaydırmalı Video Tarzı</title>
+  <style>
+    body {
+      background-color: #000;
+      margin: 0;
+      overflow-y: scroll;
+      font-family: Arial, sans-serif;
+    }
+    .video-container {
+      height: 100vh;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Video içeriğini kapsayacak şekilde yerleştirir */
+    }
+    .title {
+      position: absolute;
+      bottom: 60px;
+      left: 20px;
+      font-size: 18px;
+      color: white;
+    }
+    .like-button {
+      position: absolute;
+      bottom: 20px;
+      right: 20px;
+      background-color: rgba(24, 144, 255, 0.8);
+      color: white;
+      border: none;
+      padding: 10px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 24px;
+    }
+    .like-button:hover {
+      background-color: rgba(0, 122, 255, 0.9);
+    }
+  </style>
+</head>
+<body>
+
+<div class="video-container">
+  <video src=""controls autoplay loop muted></video>
+  <div class="title">Bu videonun başlığı burada olacak.</div>
+  <button class="like-button" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSeoywhd6dEqmgG1rLpqkGGdDkQxVlEI0AvUxtdq0lmJlTOQjQ/viewform?usp=header';">
+    👍
+  </button>
+</div>
+
+<div class="video-container">
+  <video src=""controls autoplay loop muted></video>
+  <div class="title">İkinci videonun başlığı burada olacak.</div>
+  <button class="like-button" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSeoywhd6dEqmgG1rLpqkGGdDkQxVlEI0AvUxtdq0lmJlTOQjQ/viewform?usp=header';">
+    👍
+  </button>
+</div>
+
+<div class="video-container">
+  <video src=""controls autoplay loop muted></video>
+  <div class="title">Üçüncü videonun başlığı burada olacak.</div>
+  <button class="like-button" onclick="window.location.href='https://docs.google.com/forms/d/e/1FAIpQLSeoywhd6dEqmgG1rLpqkGGdDkQxVlEI0AvUxtdq0lmJlTOQjQ/viewform?usp=header';">
+    👍
+  </button>
+</div>
+
+</body>
+</html>
